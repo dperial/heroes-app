@@ -1,11 +1,27 @@
 <div *ngIf="hero">
+    <div class="heroe_detail">
+        <!-- <h2 class="hero_big_name">{{hero.name | uppercase}} Details</h2>
+        <div class="hero_id"><span>Id:</span> {{hero.id}} </div>
+        <div class="hero_name">
+            <label>Name:
+                <input [(ngModel)]="hero.name" placeholder="Name"/>
+            </label>
+        </div> -->
 
-    <h2>{{hero.name | uppercase}} Details</h2>
-    <div><span>Id:</span> {{hero.id}} </div>
-    <div>
-        <label>Name:
-            <input [(ngModel)]="hero.name" placeholder="Name"/>
-        </label>
+        <!-- New Style -->
+    <div class="control">
+        <span>Id:</span> {{hero.id}} 
     </div>
-
+    <!-- Label Name -->
+    <div class="field has-addons">
+        <div class="control">
+            <span class="button is-info">
+              Name
+            </span>
+          </div>
+        <div class="control">
+            <input class="input name_input" [(ngModel)]="hero.name" placeholder="Name"/>
+        </div>
+    </div>
+    </div>
 </div>

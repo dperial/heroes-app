@@ -1,0 +1,22 @@
+.heroe_detail {
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    .hero_big_name {
+        font-size: 20px;
+        align-items: left;
+        margin: 20px;
+    }
+    .hero_id {
+        // position: relative;
+        float: left;
+        margin: 20px;
+    }
+    .name_input {
+        float: right;
+        border: px grey solid;
+        //margin: 20px
+    }
+}
