@@ -1,0 +1,52 @@
+@import '../../main-style.scss';
+
+.messageBox {
+    display: flex;
+    max-width: 1000px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius:6px;
+
+    .title_text{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: -40px;
+    }
+    
+    /* MessagesComponent's private CSS styles */
+
+  body {
+    margin: 2em;
+  }
+  body, input[text], button {
+    color: crimson;
+    font-family: Cambria, Georgia;
+  }
+  
+  button.clear {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+  button.clear {
+    color: #333;
+    margin-bottom: 12px;
+  }
+}
